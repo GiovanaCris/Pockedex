@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
     font-family: 'Inter', sans-serif;
     background-color: #141414;
@@ -21,4 +21,35 @@
     margin-bottom: 20px;
     font-size: 45px;
     text-shadow: 0 0 15px rgb(1, 183, 13); 
+}
+
+/*Filtros*/
+.filtros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  margin-top: 80px;
+}
+
+.filtros input,
+.filtros select {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #141414;
+  box-shadow: 0 2px 5px rgb(1, 183, 13);
+  border: 1px solid rgb(1, 183, 13);
+  color: white;
+  transition: box-shadow 0.3s;
+  min-width: 200px;
+}
+
+.filtros input:focus,
+.filtros select:focus {
+  outline: none;
+  box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
 }
